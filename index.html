@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pimmy Pinitjitsamut</title>
+<meta name="description" content="Pimmy Pinitjitsamut is an economist studying crime and policing and a Postdoctoral Fellow at the National Bureau of Economic Research.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-nav"><div class="nav-inner">
+  <a class="brand" href="#about">Pimmy Pinitjitsamut</a>
+  <nav aria-label="Main"><a href="#about">About</a><a href="#research">Research</a><a href="papers/Pinitjitsamut_CV.pdf">CV</a></nav>
+</div></header>
+<main id="main">
+  <section class="hero" id="about">
+    <h1>Pimmy Pinitjitsamut</h1>
+    <figure class="hero-photo">
+      <img src="figures/pimmy-pinitjitsamut.jpg" width="800" height="1000" alt="Portrait of Pimmy Pinitjitsamut">
+    </figure>
+    <div class="hero-text">
+      <p>I am a Postdoctoral Fellow at the National Bureau of Economic Research. I received my Ph.D. in Economics from Rutgers University in 2026. My fields are crime, labor and urban economics.</p>
+      <p>My research focuses on the economics of crime and policing. I examine how police compensation and departmental financial constraints influence officer performance and the use of force, and how pedestrian activity affects crime on city streets.</p>
+      <p class="contact"><a href="mailto:pp804@rutgers.edu">pp804@rutgers.edu</a><a href="mailto:pimmypinit@gmail.com">pimmypinit@gmail.com</a><a href="papers/Pinitjitsamut_CV.pdf">CV (PDF)</a></p>
+    </div>
+  </section>
+  <section class="page" id="research" aria-labelledby="research-heading">
+    <h2 class="page-title" id="research-heading">Research</h2>
+    <h3 class="section-title">Job market papers</h3>
+
+  <article class="paper" id="wage-caps">
+    <div>
+      <h4>Wage Caps and Police Performance: Evidence from Arbitration Reform</h4>
+      <p class="finding">New Jersey's 2% cap on police arbitration awards cut negotiated salary increases by 1.99 percentage points. Clearance rates drifted down afterward, but the estimates are imprecise and not statistically distinguishable from zero.</p>
+      <p class="paper-links"><a href="papers/Pinitjitsamut_Wage_Caps.pdf">PDF Link</a></p>
+      <details class="abstract-box">
+        <summary>Abstract</summary>
+        <p class="abstract">This paper examines whether fiscal constraints on public-sector compensation reduce police performance, using New Jersey's two percent cap on police arbitration awards (2011–2017). I assemble a new thirty-year dataset of police contracts that pinpoints each agency's contract expiration date, which determines when the cap became binding. The cap bound. Across 460 agencies it reduced negotiated salary schedule increases by 1.99 percentage points against a pre-cap mean of 3.6 percent, and it lowered the entry wage written into contracts by about 4.5 percent. Staggered difference-in-differences estimates of the effect on crime clearance rates are negative but small and imprecise, declines of 1.9 to 2.6 percentage points that are not statistically distinguishable from zero. The muted response is not explained by officers being made whole elsewhere in the contract. The compressed value does not reappear in the uncapped components, such as uniform allowances, tuition stipends, and leave, and at least four fifths of it is unaccounted for on the margins contracts record.</p>
+      </details>
+    </div>
+    <figure class="plate">
+      <a href="figures/wage-caps-event-study.png"><img src="figures/wage-caps-event-study.png" width="2400" height="1600" alt="Event study of property crime clearance rates. Estimates before the cap sit near zero. After the cap, point estimates drift down to about minus 5 percentage points, with wide confidence intervals that include zero."></a>
+      <figcaption>Effect of the cap on property crime clearance rates, by years since treatment. Error bars show 95% confidence intervals.</figcaption>
+    </figure>
+  </article>
+
+  <article class="paper" id="street-life">
+    <div>
+      <h4>How Does an Active Street Life Affect Crime? Block-Level Evidence from Chicago Road Closures</h4>
+      <p class="finding">Road closures that attract pedestrians raise foot traffic by about 61% and outdoor crime by about 59% on the closed block, so crime rises close to one-for-one with pedestrian exposure.</p>
+      <p class="paper-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7612204">SSRN Link</a></p>
+      <details class="abstract-box">
+        <summary>Abstract</summary>
+        <p class="abstract">Does pedestrian foot traffic cause crime? Using the universe of 2018–2019 Chicago road closures, I show that closures attracting pedestrians (festivals, block parties) raise foot traffic by about 61% and cause a 59% increase in outdoor crime on the closed block, with no detectable effect on restaurant or residential crime. Closure timing is unrelated to prior crime and pre-trends are flat. Crime therefore rises close to one-for-one with pedestrian exposure, leaving the risk that an additional pedestrian brings essentially unchanged. The presence of more pedestrians does not equate to enhanced safety for each person on the street, which is a fundamental assumption of the natural surveillance concept in pedestrian-focused urban design. The estimate does not distinguish between natural surveillance and a compounding opportunity mechanism. Displacement onto neighboring blocks is statistically indistinguishable from zero, though the design cannot detect first-ring effects below about 38%. Closures diverting pedestrians cut visits by about 10%, a shock the design is not powered to detect.</p>
+      </details>
+    </div>
+    <figure class="plate">
+      <a href="figures/street-life-daily-visits.png"><img src="figures/street-life-daily-visits.png" width="1465" height="1117" alt="Line chart of visits relative to expected, from seven days before to seven days after a road closure. Visits for closures that attract pedestrians jump sharply on closure day. Visits for closures that divert pedestrians dip on closure day."></a>
+      <figcaption>Foot traffic before and after road closures, measured as the deviation from expected visits. Day 0 is the day of the closure.</figcaption>
+    </figure>
+  </article>
+
+  <h3 class="section-title" id="progress">Work in progress</h3>
+  <ul class="progress">
+    <li>Effects of Police Occupational Licensure on Officer Conduct and Public Safety, with Anne Morrison Piehl</li>
+    <li>Experience and the Use of Force in New Jersey Policing, with Anne Morrison Piehl</li>
+  </ul>
+  </section>
+</main>
+</body>
+</html>
