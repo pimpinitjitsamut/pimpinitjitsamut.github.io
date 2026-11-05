@@ -44,19 +44,19 @@ h1, h2, h3, h4 { font-family: var(--sans); line-height: 1.12; margin: 0; }
   margin: 0 auto;
   padding: 0 var(--gutter);
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   gap: 16px;
 }
 .site-nav { border-bottom: 1px solid var(--rule); background: var(--band); }
 .site-nav a {
   font-family: var(--sans);
-  font-weight: 600;
-  font-size: 0.9rem;
+  font-weight: 500;
+  font-size: 0.875rem;
   color: var(--ink);
   text-decoration: none;
   display: inline-block;
-  padding: 14px 0 11px;
+  padding: 10px 0 7px;
   border-bottom: 3px solid transparent;
 }
 .site-nav nav { display: flex; gap: 24px; }
@@ -80,15 +80,15 @@ main { padding-bottom: 56px; }
 }
 h1 {
   grid-column: 1 / -1;
-  font-size: clamp(1.6rem, 6.5vw, 3rem);
-  font-weight: 700;
+  font-size: clamp(1.6rem, 5vw, 2.25rem);
+  font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.05;
   white-space: nowrap;
   margin: 0;
 }
 .hero-text p { max-width: 36em; margin: 0 0 14px; }
-.contact { font-family: var(--sans); font-weight: 600; display: flex; flex-wrap: wrap; gap: 4px 16px; }
+.contact { font-family: var(--sans); font-weight: 400; display: flex; flex-wrap: wrap; gap: 4px 16px; }
 
 .hero-photo { margin: 0; width: 100%; }
 .hero-photo img { display: block; width: 100%; height: auto; }
@@ -113,11 +113,11 @@ figure.plate figcaption {
   margin-bottom: 8px;
 }
 .section-title {
-  font-size: 1.1rem;
-  font-weight: 800;
+  font-size: 1.15rem;
+  font-weight: 600;
   margin: 40px 0 0;
   padding-bottom: 8px;
-  border-bottom: 3px solid var(--ink);
+  border-bottom: 1px solid var(--rule);
 }
 
 /* Papers */
@@ -130,14 +130,14 @@ figure.plate figcaption {
   align-items: start;
   scroll-margin-top: 16px;
 }
-.paper h4 { font-size: clamp(1.1rem, 1.7vw, 1.25rem); font-weight: 800; margin-bottom: 14px; }
-.finding { font-family: var(--sans); font-size: 0.98rem; line-height: 1.4; margin: 0 0 14px; }
-.paper-links { font-family: var(--sans); font-weight: 600; margin: 0 0 22px; }
-.abstract-box summary { font-family: var(--sans); font-weight: 800; cursor: pointer; }
+.paper h3 { font-size: 1.05rem; font-weight: 600; line-height: 1.25; margin-bottom: 12px; }
+.finding { font-size: 0.95rem; line-height: 1.5; margin: 0 0 12px; }
+.paper-links { font-family: var(--sans); font-size: 0.9rem; margin: 0 0 12px; }
+.abstract-box summary { font-family: var(--sans); font-size: 0.9rem; cursor: pointer; }
 .abstract-box[open] summary { margin-bottom: 8px; }
 .abstract { margin: 0; font-size: 0.9rem; color: var(--ink-soft); max-width: 40em; }
 .plate { margin: 0; }
-.plate a { display: block; background: var(--plate); padding: 12px; border: 1px solid var(--rule); }
+.plate a { display: block; }
 .plate img { display: block; width: 100%; height: auto; }
 .plate--tall { max-width: 460px; }
 
@@ -148,9 +148,4 @@ figure.plate figcaption {
   .hero, .paper { grid-template-columns: minmax(0, 1fr); }
   .hero-photo { max-width: 200px; }
   .plate--tall { max-width: 100%; }
-}
-
-@media (max-width: 520px) {
-  .site-nav .brand { display: none; }
-  .nav-inner { justify-content: flex-end; }
 }
